@@ -1,0 +1,354 @@
+{
+    "name": "drupal-composer/drupal-project",
+    "description": "Project template for Drupal 8 projects with composer",
+    "type": "project",
+    "license": "GPL-2.0+",
+    "authors": [
+        {
+            "name": "",
+            "role": ""
+        }
+    ],
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://packages.drupal.org/8"
+        },
+        {
+            "type": "git",
+            "url":  "https://github.com/sgurlt/BS-Phing-Tasks.git"
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "weitzman/phing-drush-task",
+                "version": "1.0.2",
+                "autoload": {
+                    "psr-0": {
+                        "Drush\\": "src/"
+                    }
+                },
+                "source": {
+                    "url": "https://github.com/weitzman/phing-drush-task",
+                    "type": "git",
+                    "reference": "origin/patch-2"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name":"enyo/dropzone",
+                "version": "4.0.1",
+                "type": "drupal-library",
+                "source": {
+                    "url": "https://github.com/enyo/dropzone",
+                    "type": "git",
+                    "reference": "origin/master"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "heiseonline/shariff",
+                "version": "master",
+                "type": "drupal-library",
+                "dist": {
+                    "url": "https://github.com/heiseonline/shariff/archive/1.26.2.zip",
+                    "type": "zip"
+                },
+                "require": {
+                    "composer/installers": "~1.0"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "ckeditor/colorbutton",
+                "version": "4.6.2",
+                "type": "drupal-library",
+                "dist": {
+                    "url": "https://download.ckeditor.com/colorbutton/releases/colorbutton_4.6.2.zip",
+                    "type": "zip"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "ckeditor/panelbutton",
+                "version": "4.7.3",
+                "type": "drupal-library",
+                "dist": {
+                    "url": "https://download.ckeditor.com/panelbutton/releases/panelbutton_4.7.3.zip",
+                    "type": "zip"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "ckeditor/token",
+                "version": "1.1.0",
+                "type": "drupal-library",
+                "dist": {
+                    "url": "https://download.ckeditor.com/token/releases/token_1.1.zip",
+                    "type": "zip"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name":"smonetti/btbutton",
+                "version": "1.0",
+                "type": "drupal-library",
+                "source": {
+                    "url": "https://github.com/smonetti/btbutton",
+                    "type": "git",
+                    "reference": "origin/master"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "davidjbradshaw/iframe-resizer",
+                "version": "3.5",
+                "type": "drupal-library",
+                "source": {
+                    "url": "https://github.com/davidjbradshaw/iframe-resizer",
+                    "type": "git",
+                    "reference": "origin/master"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "bgrins/spectrum",
+                "version": "1.6.0",
+                "type": "drupal-library",
+                "source": {
+                    "url": "https://github.com/bgrins/spectrum",
+                    "type": "git",
+                    "reference": "tags/1.6.0"
+                }
+            }
+        },
+        {
+            "type" : "package",
+            "package" : {
+                "name" : "drupal/drupal_content_sync",
+                "version": "1.0",
+                "type" : "drupal-module",
+                "source": {
+                    "url": "https://github.com/sgurlt/apiunify.drupal.contentSync",
+                    "type": "git",
+                    "reference": "origin/dev"
+                }
+            }
+        }
+    ],
+    "require": {
+        "composer/installers": "^1.2",
+        "cweagans/composer-patches": "^1.6",
+        "phing/phing": "^2.12",
+        "brightsolutions/phing-tasks": "~8.0",
+        "drupal-composer/drupal-scaffold": "^2.2",
+        "pear/versioncontrol_git": "v0.5.0",
+        "drupal/console": "~1.0",
+        "drupal/core": "8.4.5",
+        "drush/drush": "~8.0",
+        "drupal/drush_language": "~1.0",
+        "drupal/admin_toolbar": "^1.19",
+        "drupal/coffee": "~1.0",
+        "drupal/responsive_preview": "~1.0",
+        "drupal/backup_migrate": "~4.0",
+        "drupal/linkit": "~5.0",
+        "drupal/token": "~1.0",
+        "drupal/metatag": "~1.0",
+        "drupal/ultimate_cron": "~2.0",
+        "weitzman/phing-drush-task": "~1.0",
+        "drupal/paragraphs": "^1.2",
+        "drupal/paragraphs_browser": "1.x-dev",
+        "drupal/tmgmt": "^1.3",
+        "drupal/tmgmt_content": "^1.3",
+        "drupal/tmgmt_file": "^1.3",
+        "drupal/field_group": "^1.0@RC",
+        "drupal/entity_browser": "^1.3",
+        "drupal/entity_browser_enhanced": "^1.0@beta",
+        "drupal/ctools": "^3.0",
+        "drupal/dropzonejs": "^2.0@alpha",
+        "enyo/dropzone": "^4.0.1",
+        "drupal/inline_entity_form": "^1.0@beta",
+        "drupal/video_embed_field": "^1.5",
+        "drupal/geofield": "^1.0@alpha",
+        "drupal/address": "^1.2",
+        "drupal/conditional_fields": "^1.0@alpha",
+        "drupal/field_collection": "^1.0@alpha",
+        "drupal/auto_entitylabel": "^2.0@beta",
+        "drupal/geocoder": "^2.0@alpha",
+        "drupal/twig_tweak": "^1.9",
+        "drupal/restui": "^1.15",
+        "drupal/shariff": "1.x-dev#8f15043",
+        "drupal/menu_breadcrumb": "^1.4",
+        "drupal/eu_cookie_compliance": "^1.0@beta",
+        "drupal/soundcloudfield": "1.x-dev#42ed9e4",
+        "drupal/ds": "^3.1",
+        "drupal/colorbutton": "^1.1",
+        "drupal/ckeditor_bootstrap_buttons": "^1.1",
+        "ckeditor/colorbutton": "^4.6.2",
+        "ckeditor/panelbutton": "^4.7.3",
+        "ckeditor/token": "^1.0",
+        "smonetti/btbutton": "^1.0",
+        "drupal/xmlsitemap": "^1.0",
+        "drupal/context_groups": "^1.0",
+        "drupal/link_attributes": "^1.1",
+        "drupal/honeypot": "^1.27",
+        "drupal/pbf": "^1.1",
+        "drupal/field_permissions": "^1.0@beta",
+        "drupal/webform": "^5.0",
+        "drupal/migrate_tools": "^4.0",
+        "drupal/languagefield": "^1.4",
+        "drupal/flag": "^4.0@alpha",
+        "guzzlehttp/guzzle": "^6.3",
+        "drupal/migrate_plus": "^4.0",
+        "drupal/styleswitcher": "2.x-dev",
+        "drupal/better_exposed_filters": "^3.0",
+        "drupal/search_api_solr": "^1.2",
+        "drupal/search_api_attachments": "^1.0",
+        "sunra/php-simple-html-dom-parser": "1.5",
+        "drupal/default_content": "^1.0@alpha",
+        "drupal/focal_point": "^1.0@beta",
+        "drupal/views_fieldsets": "^3.1",
+        "drupal/migrate_upgrade": "^3.0",
+        "drupal/pathauto": "^1.0",
+        "drupal/allowed_formats": "^1.1",
+        "drupal/ldap": "^3.0",
+        "drupal/externalauth": "^1.0",
+        "drupal/authorization": "1.x-dev",
+        "drupal/config_ignore": "^2.1",
+        "drupal/config_filter": "^1.1",
+        "drupal/redirect": "^1.0",
+        "davidjbradshaw/iframe-resizer": "^3.5",
+        "drupal/color_field": "^2.0",
+        "bgrins/spectrum": "1.6.0",
+        "drupal/piwik": "^1.2",
+        "drupal/amp": "^1.0",
+        "drupal/amptheme": "^1.0",
+        "drupal/smart_trim": "^1.1",
+        "drupal/menu_admin_per_menu": "^1.0",
+        "drupal/extlink": "^1.0",
+        "drupal/webhooks": "^1.0@alpha",
+        "drupal/real_aes": "^2.0",
+        "drupal/drupal_content_sync": "^1.0",
+        "drupal/config_split": "^1.3",
+        "drupal/search_api": "^1.6",
+        "drupal/encrypt": "^3.0"
+    },
+    "require-dev": {
+        "behat/mink": "~1.6",
+        "behat/mink-goutte-driver": "~1.2",
+        "jcalderonzumba/gastonjs": "^1.1@dev",
+        "jcalderonzumba/mink-phantomjs-driver": "~0.3.1",
+        "mikey179/vfsStream": "~1.2",
+        "phpunit/phpunit": "~4.8",
+        "symfony/css-selector": "~2.8",
+        "drupal/coder": "8.2.*",
+        "phpmd/phpmd": "2.*",
+        "sebastian/phpcpd": "2.*",
+        "squizlabs/php_codesniffer": "2.*",
+        "geerlingguy/drupal-vm": "^3.1",
+        "drupal/devel": "~1.0",
+        "phpro/grumphp": "^0.11.6",
+        "jakub-onderka/php-parallel-lint": "^0.9.2"
+    },
+    "conflict": {
+        "drupal/drupal": "*"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "config": {
+        "bin-dir": ".bin/",
+        "secure-http": false
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "bash scripts/coding-standards.sh"
+        ],
+        "post-update-cmd": [
+            "bash scripts/coding-standards.sh"
+        ]
+    },
+    "extra": {
+        "patches": {
+            "drupal/default_content": {
+                "#2698425 Do not reimport existing entities": "https://www.drupal.org/files/issues/do_not_reimport-2698425-64.patch",
+                "#2640734 Allow manual imports": "https://www.drupal.org/files/issues/allow_manual_imports-2640734-67.patch"
+            },
+            "drupal/linkit": {
+                "2903176 Views as a dependency": "https://www.drupal.org/files/issues/linkit_views_dependency-2903176-2.patch"
+            },
+            "drupal/paragraphs": {
+                "#2868155 add new hooks to allow easier editing of paragraph forms": "https://www.drupal.org/files/issues/2868155-8.patch"
+            },
+            "drupal/menu_breadcrumb": {
+                "Change label of the home link": "patches/menu_breadcrumb_change_home_label.patch"
+            },
+            "drupal/conditional_fields": {
+                "Fix problems with notices": "patches/conditional_fields_fixed_php_notices.patch"
+            },
+            "drupal/eu_cookie_compliance": {
+                "#2811003 Consent by clicking": "https://www.drupal.org/files/issues/eu_cookie_compliance_consent_by_clicking-2811003-4.patch",
+                "Remove default settings": "patches/eu_cookie_compliance_fixes.patch"
+            },
+            "drupal/soundcloudfield": {
+                "Remove title from fildset widget": "patches/soundcloudfield_remove_title_from_filedset.patch",
+                "Changed curl for Guzzle HTTP client library": "patches/soundcloudfield_changed_curl_function.patch"
+            },
+            "drupal/shariff": {
+                "#2881696 Missing module js file": "https://www.drupal.org/files/issues/two_twitter_popups-2881126-6.patch"
+            },
+            "drupal/core": {
+                "#2881126 Media: Migration integration": "patches/2835825-21.patch",
+                "add drowdrop callback to tabledrag": "patches/tabledrag_rowdrop_event.patch"
+            },
+            "drupal/migrate_plus": {
+                "Fix issue #2792765 allow XML elements": "patches/migrate_plus_fix_2792765.patch"
+            },
+            "drupal/color_field": {
+                "#2827198 Spectrum: Defining a palette": "https://www.drupal.org/files/issues/color_field_spectrum_palette_fix-2827198-18.patch"
+            },
+            "drupal/flag": {
+                "#2825993 Fix Views support for anonymous flaggings": "https://www.drupal.org/files/issues/flag-views_support_anon_flaggins-2825993-58.patch"
+            },
+            "drupal/geocoder": {
+                "Avoided fatal error. Declaration handler for plugin OpenCage.": "patches/open_page_handler_declaration.patch",
+                "#2796277 using reverse geocoding behind a proxy": "https://www.drupal.org/files/issues/using_reverse_geocoding_behind_proxy-2796277-3.patch"
+            },
+            "drupal/amptheme": {
+                "#2753089 Check if simplexml_load_file returns FALSE in preprocess_block": "https://www.drupal.org/files/issues/amptheme-do_not_use_the_network_for_loading_logo_information-2753089-7.patch"
+            },
+            "drupal/styleswitcher": {
+                "Improve behaviors for cookies": "patches/styleswitcher_cookie_domain.patch"
+            },
+            "drupal/encrypt": {
+                "Added coninical route": "patches/ecrypt_added_canonical_route.patch"
+            }
+        },
+        "installer-paths": {
+            "docroot/core": ["type:drupal-core"],
+            "docroot/modules/contrib/{$name}": ["type:drupal-module"],
+            "docroot/profiles/contrib/{$name}": ["type:drupal-profile"],
+            "docroot/themes/contrib/{$name}": ["type:drupal-theme"],
+            "drush/contrib/{$name}": ["type:drupal-drush"],
+             "docroot/libraries/{$name}": [
+                "type:drupal-library",
+                "enyo/dropzone"
+            ]
+        }
+    }
+}
