@@ -133,24 +133,6 @@
             "type": "drupal-library"
         },
         {
-            "name": "brightsolutions/phing-tasks",
-            "version": "8.0.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/sgurlt/BS-Phing-Tasks.git",
-                "reference": "060c61bda9162fa79439326dea456db3ce92de88"
-            },
-            "type": "library",
-            "authors": [
-                {
-                    "name": "Sebastian Gurlt",
-                    "email": "gurlt@brightsolutions.de"
-                }
-            ],
-            "description": "Contains the Bright Solutions Drupal project phing tasks.",
-            "time": "2017-12-12 08:21:21"
-        },
-        {
             "name": "ckeditor/colorbutton",
             "version": "4.6.2",
             "dist": {
@@ -3436,68 +3418,6 @@
                 "reference": "origin/dev"
             },
             "type": "drupal-module"
-        },
-        {
-            "name": "drupal/drush_language",
-            "version": "dev-1.x",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupal.org/project/drush_language",
-                "reference": "04376efe57e709c9c2a859313706456dc7029c06"
-            },
-            "require": {
-                "drupal/core": "*"
-            },
-            "type": "drupal-drush",
-            "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
-                "drupal": {
-                    "version": "8.x-1.x-dev",
-                    "datestamp": "1492040643",
-                    "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Dev releases are not covered by Drupal security advisories."
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "authors": [
-                {
-                    "name": "axel.rutz",
-                    "homepage": "https://www.drupal.org/user/229048"
-                },
-                {
-                    "name": "dawehner",
-                    "homepage": "https://www.drupal.org/user/99340"
-                },
-                {
-                    "name": "gurvan",
-                    "homepage": "https://www.drupal.org/user/852194"
-                },
-                {
-                    "name": "ndf",
-                    "homepage": "https://www.drupal.org/user/599438"
-                },
-                {
-                    "name": "the greenman",
-                    "homepage": "https://www.drupal.org/user/19836"
-                },
-                {
-                    "name": "xatoo",
-                    "homepage": "https://www.drupal.org/user/103227"
-                }
-            ],
-            "description": "Provides drush commands",
-            "homepage": "https://www.drupal.org/project/drush_language",
-            "support": {
-                "source": "http://cgit.drupalcode.org/drush_language"
-            },
-            "time": "2017-11-20 03:18:26"
         },
         {
             "name": "drupal/ds",
