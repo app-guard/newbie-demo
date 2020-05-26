@@ -183,12 +183,9 @@
         "enyo/dropzone": "^4.0.1",
         "drupal/inline_entity_form": "^1.0@beta",
         "drupal/video_embed_field": "^1.5",
-        "drupal/geofield": "^1.0@alpha",
-        "drupal/address": "^1.2",
         "drupal/conditional_fields": "^1.0@alpha",
         "drupal/field_collection": "^1.0@alpha",
         "drupal/auto_entitylabel": "^2.0@beta",
-        "drupal/geocoder": "^2.0@alpha",
         "drupal/twig_tweak": "^1.9",
         "drupal/restui": "^1.15",
         "drupal/shariff": "1.x-dev#8f15043",
@@ -321,10 +318,6 @@
             },
             "drupal/flag": {
                 "#2825993 Fix Views support for anonymous flaggings": "https://www.drupal.org/files/issues/flag-views_support_anon_flaggins-2825993-58.patch"
-            },
-            "drupal/geocoder": {
-                "Avoided fatal error. Declaration handler for plugin OpenCage.": "patches/open_page_handler_declaration.patch",
-                "#2796277 using reverse geocoding behind a proxy": "https://www.drupal.org/files/issues/using_reverse_geocoding_behind_proxy-2796277-3.patch"
             },
             "drupal/amptheme": {
                 "#2753089 Check if simplexml_load_file returns FALSE in preprocess_block": "https://www.drupal.org/files/issues/amptheme-do_not_use_the_network_for_loading_logo_information-2753089-7.patch"
