@@ -15,27 +15,6 @@
             "url": "https://packages.drupal.org/8"
         },
         {
-            "type": "git",
-            "url":  "https://github.com/sgurlt/BS-Phing-Tasks.git"
-        },
-        {
-            "type": "package",
-            "package": {
-                "name": "weitzman/phing-drush-task",
-                "version": "1.0.2",
-                "autoload": {
-                    "psr-0": {
-                        "Drush\\": "src/"
-                    }
-                },
-                "source": {
-                    "url": "https://github.com/weitzman/phing-drush-task",
-                    "type": "git",
-                    "reference": "origin/patch-2"
-                }
-            }
-        },
-        {
             "type": "package",
             "package": {
                 "name":"enyo/dropzone",
@@ -137,25 +116,11 @@
                     "reference": "tags/1.6.0"
                 }
             }
-        },
-        {
-            "type" : "package",
-            "package" : {
-                "name" : "drupal/drupal_content_sync",
-                "version": "1.0",
-                "type" : "drupal-module",
-                "source": {
-                    "url": "https://github.com/sgurlt/apiunify.drupal.contentSync",
-                    "type": "git",
-                    "reference": "origin/dev"
-                }
-            }
         }
     ],
     "require": {
         "composer/installers": "^1.2",
         "cweagans/composer-patches": "^1.6",
-        "phing/phing": "^2.12",
         "drupal-composer/drupal-scaffold": "^2.2",
         "pear/versioncontrol_git": "v0.5.0",
         "drupal/console": "~1.0",
@@ -169,7 +134,6 @@
         "drupal/token": "~1.0",
         "drupal/metatag": "~1.0",
         "drupal/ultimate_cron": "~2.0",
-        "weitzman/phing-drush-task": "~1.0",
         "drupal/paragraphs": "^1.2",
         "drupal/paragraphs_browser": "1.x-dev",
         "drupal/tmgmt": "^1.3",
