@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "82529970ec577f60a8b2f665cafd5af6",
+    "content-hash": "dfcc3908661bb47ea73449d8788834f5",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -5554,30 +5554,30 @@
         },
         {
             "name": "drupal/styleswitcher",
-            "version": "dev-2.x",
+            "version": "2.1.0",
             "source": {
                 "type": "git",
-                "url": "https://git.drupal.org/project/styleswitcher",
-                "reference": "f0ac53da46ed0c6217e95696d6c6dc9911e95c7d"
+                "url": "https://git.drupalcode.org/project/styleswitcher.git",
+                "reference": "8.x-2.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/styleswitcher-8.x-2.1.zip",
+                "reference": "8.x-2.1",
+                "shasum": "bcfa6a1131f848a689001434ff55b12b00959b7d"
             },
             "require": {
-                "drupal/core": "~8.0"
+                "drupal/core": "^8 || ^9"
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-2.x": "2.x-dev"
-                },
                 "drupal": {
-                    "version": "8.x-2.0-alpha1+6-dev",
-                    "datestamp": "1469499501",
+                    "version": "8.x-2.1",
+                    "datestamp": "1699457113",
                     "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Dev releases are not covered by Drupal security advisories."
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
                     }
-                },
-                "patches_applied": {
-                    "Improve behaviors for cookies": "patches/styleswitcher_cookie_domain.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -5598,12 +5598,11 @@
                     "homepage": "https://www.drupal.org/user/67977"
                 }
             ],
-            "description": "Provides a stylesheet switching functionality.",
+            "description": "Allows website visitors to choose which stylesheet they would like to view the site with.",
             "homepage": "https://www.drupal.org/project/styleswitcher",
             "support": {
-                "source": "http://cgit.drupalcode.org/styleswitcher"
-            },
-            "time": "2016-07-03T02:32:57+00:00"
+                "source": "https://git.drupalcode.org/project/styleswitcher"
+            }
         },
         {
             "name": "drupal/tmgmt",
@@ -12036,7 +12035,6 @@
         "drupal/soundcloudfield": 20,
         "drupal/field_permissions": 10,
         "drupal/flag": 15,
-        "drupal/styleswitcher": 20,
         "drupal/default_content": 15,
         "drupal/focal_point": 10,
         "drupal/webhooks": 15,
