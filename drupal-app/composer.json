@@ -171,7 +171,7 @@
         "drupal/flag": "^4.0@alpha",
         "guzzlehttp/guzzle": "^6.3",
         "drupal/migrate_plus": "^4.0",
-        "drupal/styleswitcher": "2.x-dev",
+        "drupal/styleswitcher": "2.1",
         "drupal/better_exposed_filters": "^3.0",
         "drupal/search_api_solr": "^1.2",
         "drupal/search_api_attachments": "^1.0",
